@@ -471,7 +471,7 @@ body:not(.is-home-page) main {
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.5px solid black;
-  flex-shrink: 0;
+  shrink: 0;
 }
 
 .window-titlebar-dots {
