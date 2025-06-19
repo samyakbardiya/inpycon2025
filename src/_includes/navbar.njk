@@ -57,7 +57,7 @@
           <li class="relative">
             {% if item.hasSubmenu %}
               <label for="desktop-menu-radio-{{ loop.index }}" 
-                     class="flex items-center gap-1 py-2 px-3 text-white hover:text-[#D7FF7B] text-base font-normal font-['Acid_Grotesk'] leading-tight transition-colors duration-200 cursor-pointer nav-link">
+                     class="flex items-center gap-1 py-2 px-3 text-white hover:text-[#D7FF7B] text-base font-normal leading-tight transition-colors duration-200 cursor-pointer nav-link">
                 {{ item.name }}
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" class="ml-1 fill-current text-gray-400 transition-transform duration-200">
                   <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
@@ -85,7 +85,7 @@
             {% else %}
               <a href="{% if item.isExternal %}{{ item.link }}{% elif item.link and item.link[0] == '#' %}{{ item.link }}{% else %}{{ env.baseUrl }}{{ item.link }}{% endif %}"
                  {% if item.isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}
-                 class="flex items-center gap-1 py-2 px-3 text-white hover:text-[#D7FF7B] text-base font-normal font-['Acid_Grotesk'] leading-tight transition-colors duration-200 no-underline nav-link">
+                 class="flex items-center gap-1 py-2 px-3 text-white hover:text-[#D7FF7B] text-base font-normal leading-tight transition-colors duration-200 no-underline nav-link">
                 {{ item.name }}
               </a>
             {% endif %}
